@@ -30,3 +30,4 @@ int main()
     printf("Umur: %d\n", mhs2.age);
     return 0;
 }
+// NAMBAH COMMENT TEST
