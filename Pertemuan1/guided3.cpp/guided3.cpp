@@ -1,5 +1,6 @@
 #include <iostream>
 #include <array>
+// by Rizkulloh ALpriyansah
 using namespace std;
 int main() {
 // Deklarasi dan inisialisasi array
