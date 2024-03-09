@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/RIZKULAH ALPRIYANSAH/OneDrive/Documents/GitHub/2311102142_Rizkulloh-Alpriyansah",
-      "program": "c:/Users/RIZKULAH ALPRIYANSAH/OneDrive/Documents/GitHub/2311102142_Rizkulloh-Alpriyansah/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
