@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+//Dibuat oleh Rizkulloh dengan NIM 2311102142
 using namespace std;
 
 int main() {
