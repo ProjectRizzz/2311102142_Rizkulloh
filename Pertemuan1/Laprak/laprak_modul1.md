@@ -277,7 +277,7 @@ int main() {
 
 #### Output:
 
-![Screenshot Output Unguided 2](Screenshot_Output_Unguided-2_Rizkulloh.png)
+![Screenshot Output Unguided 2](Screenshot_Output_unguided-2_Rizkulloh.png)
 
 ## ->Penjelasan Program:
 
@@ -334,7 +334,7 @@ int main() {
 
 #### Output:
 
-![Screenshot Output Unguided 3](Screenshot_Output_Unguided-3_Rizkulloh.png)
+![Screenshot Output Unguided 3](Screenshot_Output_unguided-3_Rizkulloh.png)
 
 ## ->Penjelasan Program:
 
