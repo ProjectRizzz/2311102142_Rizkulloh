@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+//tipe data abstrak by Rizkulloh
 struct Mahasiswa
 {
     char name [50];
