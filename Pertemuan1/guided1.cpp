@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-
+//by Rizkulloh Alpriyansah
 using namespace std;
 
 int main() 
