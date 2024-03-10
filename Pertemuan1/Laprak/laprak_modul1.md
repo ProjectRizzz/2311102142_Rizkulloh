@@ -4,19 +4,18 @@
 
 ## Dasar Teori
 
-Tipe Data Primitif:
-
-1. Tipe data primitif merupakan tipe data dasar yang tersedia di dalam bahasa pemrograman. Tipe data ini mewakili nilai tunggal dan memiliki ukuran yang tetap.
+1. Tipe Data Primitif:
+   Tipe data primitif merupakan tipe data dasar yang tersedia di dalam bahasa pemrograman. Tipe data ini mewakili nilai tunggal dan memiliki ukuran yang tetap.
    Contoh tipe data primitif termasuk integer (bilangan bulat), float (bilangan desimal), double (bilangan desimal dengan presisi ganda), char (karakter), dan bool (nilai kebenaran).
    Tipe data primitif digunakan untuk merepresentasikan data sederhana seperti angka, karakter, atau nilai kebenaran yang tidak memerlukan struktur yang kompleks.
-   Tipe Data Abstrak (ADT - Abstract Data Type):
 
-2. Tipe data abstrak merupakan tipe data yang didefinisikan oleh kumpulan operasi yang dapat dilakukan terhadap data tersebut, tanpa mengungkapkan bagaimana operasi tersebut diimplementasikan.
+2. Tipe Data Abstrak (ADT - Abstract Data Type):
+   Tipe data abstrak merupakan tipe data yang didefinisikan oleh kumpulan operasi yang dapat dilakukan terhadap data tersebut, tanpa mengungkapkan bagaimana operasi tersebut diimplementasikan.
    ADT menyediakan antarmuka yang terstandarisasi untuk berinteraksi dengan data, memungkinkan pengguna untuk menggunakan operasi tersebut tanpa perlu mengetahui detail implementasinya.
    Contoh tipe data abstrak meliputi struktur data seperti stack, queue, linked list, dan tree, serta tipe data kompleks seperti bilangan kompleks atau matriks.
-   Tipe Data Koleksi:
 
-3. Tipe data koleksi digunakan untuk menyimpan sejumlah nilai atau objek dalam satu variabel. Ini memungkinkan pengelompokan data menjadi satu unit logis untuk mempermudah pengolahan data.
+3. Tipe Data Koleksi:
+   Tipe data koleksi digunakan untuk menyimpan sejumlah nilai atau objek dalam satu variabel. Ini memungkinkan pengelompokan data menjadi satu unit logis untuk mempermudah pengolahan data.
    Contoh tipe data koleksi termasuk array, vector (di C++), list, set, map, dan hash table.
    Tipe data koleksi memungkinkan pengguna untuk menyimpan dan mengelola data dalam jumlah yang besar dan beragam, serta memberikan akses cepat ke elemen-elemennya.
 
@@ -152,24 +151,70 @@ Setelah itu, program berakhir dan mengembalikan nilai 0.
 ### 1. [Soal]
 
 ```C++
+//Di buat oleh Rizkulloh Alpriyansah dengan nim 2311102142
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
-    cout << "ini adalah file code unguided praktikan" << endl;
+    char pil_142;
+    float ang1_142, ang2_142;
+
+    cout << "Operator logika yang kami sediakan :" << endl;
+    cout << "A. Tambah (+)" << endl;
+    cout << "B. Kurang (-)" << endl;
+    cout << "C. Kali (*)" << endl;
+    cout << "D. Bagi (/)" << endl;
+    cout << "Silahkan masukkan operator (A, B, C, D): ";
+    cin >> pil_142;
+
+    cout << "Masukkan angka pertama : ";
+    cin >> ang1_142;
+    cout << "Masukkan angka kedua : ";
+    cin >>ang2_142;
+
+    switch (pil_142) {
+        case 'A':
+            cout << "Hasil Tambah: " << ang1_142 + ang2_142 << endl;
+            break;
+        case 'B':
+            cout << "Hasil Kurang: " << ang1_142 - ang2_142 << endl;
+            break;
+        case 'C':
+            cout << "Hasil Kali: " << ang1_142 * ang2_142 << endl;
+            break;
+        case 'D':
+            if (ang2_142 != 0)
+                cout << "Hasil Bagi: " << ang1_142 / ang2_142 << endl;
+            else
+                cout << "Tidak bisa melakukan pembagian dengan nol." << endl;
+            break;
+        default:
+            cout << "Operator tidak valid!" << endl;
+            break;
+    }
+
     return 0;
 }
 ```
 
 #### Output:
 
-![240302_00h00m06s_screenshot](https://github.com/suxeno/Struktur-Data-Assignment/assets/111122086/6d1727a8-fb77-4ecf-81ff-5de9386686b7)
+![Screenshot Output Unguided 1](Output_Unguided-1_Rizkulloh)
 
-Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
+## ->Penjelasan Program:
+
+Program meminta pengguna untuk memilih operator aritmatika (A, B, C, atau D) dan memasukkan dua angka.
+Setelah input diterima, program menggunakan struktur switch-case untuk melakukan operasi sesuai dengan operator yang dimasukkan pengguna.
+Jika operator adalah pembagian dan angka kedua adalah nol, program memberikan pesan kesalahan karena tidak dapat melakukan pembagian dengan nol.
+Hasil operasi aritmatika kemudian dicetak ke layar.
 
 ## Kesimpulan
 
-Ringkasan dan interpretasi pandangan kalia dari hasil praktikum dan pembelajaran yang didapat[1].
+Program ini menggunakan tipe data primitif seperti char untuk menyimpan operator dan float untuk menyimpan angka.
+Struktur kontrol switch-case digunakan untuk mengevaluasi operator yang dimasukkan pengguna dan melakukan operasi yang sesuai.
+Program ini memberikan kesempatan kepada pengguna untuk melakukan operasi matematika sederhana dengan mudah.
+Penggunaan tipe data primitif dalam program ini memungkinkan penulisan kode yang sederhana dan efisien untuk operasi matematika dasar.
 
 ## Referensi
 
