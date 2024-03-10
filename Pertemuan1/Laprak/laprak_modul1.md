@@ -209,12 +209,18 @@ Setelah input diterima, program menggunakan struktur switch-case untuk melakukan
 Jika operator adalah pembagian dan angka kedua adalah nol, program memberikan pesan kesalahan karena tidak dapat melakukan pembagian dengan nol.
 Hasil operasi aritmatika kemudian dicetak ke layar.
 
-## Kesimpulan
+## ->Kesimpulan
 
 Program ini menggunakan tipe data primitif seperti char untuk menyimpan operator dan float untuk menyimpan angka.
 Struktur kontrol switch-case digunakan untuk mengevaluasi operator yang dimasukkan pengguna dan melakukan operasi yang sesuai.
 Program ini memberikan kesempatan kepada pengguna untuk melakukan operasi matematika sederhana dengan mudah.
 Penggunaan tipe data primitif dalam program ini memungkinkan penulisan kode yang sederhana dan efisien untuk operasi matematika dasar.
+
+### 2. [Soal]
+
+```C++
+
+```
 
 ## Referensi
 
