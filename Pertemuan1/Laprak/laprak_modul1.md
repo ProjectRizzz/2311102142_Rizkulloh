@@ -148,7 +148,10 @@ Setelah itu, program berakhir dan mengembalikan nilai 0.
 
 ## Unguided
 
-### 1. [Soal]
+### 1. [ Buatlah program menggunakan tipe data primitif minimal dua fungsi dan bebas.
+
+         Menampilkan program, jelaskan program tersebut dan ambil kesimpulan dari
+         materi tipe data primitif!]
 
 ```C++
 //Di buat oleh Rizkulloh Alpriyansah dengan nim 2311102142
@@ -216,11 +219,137 @@ Struktur kontrol switch-case digunakan untuk mengevaluasi operator yang dimasukk
 Program ini memberikan kesempatan kepada pengguna untuk melakukan operasi matematika sederhana dengan mudah.
 Penggunaan tipe data primitif dalam program ini memungkinkan penulisan kode yang sederhana dan efisien untuk operasi matematika dasar.
 
-### 2. [Soal]
+### 2. [Jelaskan fungsi dari class dan struct secara detail dan berikan contoh programnya]
 
 ```C++
+// Dibuat oleh Rizkulloh Dengan NIM 2311102142
+#include <iostream>
+#include <string>
 
+using namespace std;
+
+// Struct untuk menyimpan nama dan nomor favorit
+struct Biodata {
+    string nama_142;
+    int nomorFavorit_142;
+};
+
+// Class untuk merepresentasikan sebuah kendaraan
+class Kendaraan {
+private:
+    string jenis_142;
+    string merek_142;
+    string model_142;
+    int tahun_142;
+
+public:
+    // Constructor untuk menginisialisasi objek Kendaraan
+    Kendaraan(string jns, string m, string mdl, int thn) : jenis_142(jns), merek_142(m), model_142(mdl), tahun_142(thn) {}
+
+    // Metode untuk menampilkan informasi kendaraan
+    void display() {
+        cout << "Jenis Kendaraan: " << jenis_142 << endl;
+        cout << "Merek: " << merek_142 << ", Model: " << model_142 << ", Tahun: " << tahun_142 << endl;
+    }
+};
+
+int main() {
+    // Membuat objek Biodata
+    Biodata biodata_142;
+    biodata_142.nama_142 = "Rizkulloh";
+    biodata_142.nomorFavorit_142 = 7;
+
+    // Menampilkan informasi biodata
+    cout << "Biodata:" << endl;
+    cout << "Nama: " << biodata_142.nama_142 << endl;
+    cout << "Nomor Favorit: " << biodata_142.nomorFavorit_142 << endl;
+
+    // Membuat objek Kendaraan
+    Kendaraan mobil_142("Mobil", "Toyota", "Avanza", 2020);
+
+    // Menampilkan informasi kendaraan
+    cout << "\nInformasi Kendaraan:" << endl;
+    mobil_142.display();
+
+    return 0;
+}
 ```
+
+#### Output:
+
+![Screenshot Output Unguided 2](Output-Unguided-2_Rizkulloh.png)
+
+## ->Penjelasan Program:
+
+Program di atas adalah program C++ yang menyimpan informasi tentang biodata seseorang (nama dan nomor favorit) dan detail kendaraan (jenis, merek, model, dan tahun). Program ini juga menampilkan informasi tersebut ke layar.
+
+Pertama, kita mendefinisikan sebuah `struct` yang disebut `Biodata` untuk menyimpan nama dan nomor favorit. Kemudian, kita mendefinisikan sebuah `class` yang disebut `Kendaraan` untuk merepresentasikan kendaraan dengan atribut jenis, merek, model, dan tahun. Di dalam `main()` function, kita membuat objek `Biodata` dengan nama `biodata_142` dan mengisi informasinya dengan nama "Rizkulloh" dan nomor favorit 7. Selanjutnya, kita membuat objek `Kendaraan` dengan nama `mobil_142` dan mengisi informasinya dengan jenis "Mobil", merek "Toyota", model "Avanza", dan tahun 2020. Terakhir, program menampilkan informasi biodata dan informasi kendaraan ke layar.
+
+## Penjelasan class dan struct
+
+A.Struct:
+1.Grupkan Data: struct adalah fitur dalam banyak bahasa pemrograman yang memungkinkan kita untuk mengelompokkan beberapa data bersama-sama. Biasanya, struct digunakan untuk menyimpan data yang terkait, tetapi tidak memiliki banyak metode atau fungsi-fungsi terkait.
+2.Sifat Default Public: Dalam struct, secara default, semua anggota (variabel) adalah public, artinya kita bisa mengaksesnya dari luar struct tanpa pembatasan. Hal ini membuat struct lebih sederhana untuk digunakan dalam beberapa kasus.
+3.Penggunaan yang Sederhana: Struct sering digunakan untuk menyimpan data tanpa tambahan metode atau fungsi-fungsi kompleks yang terkait. Mereka cocok untuk situasi di mana kamu hanya perlu mengelompokkan beberapa data bersama-sama tanpa memperhatikan encapsulation atau inheritance.
+B.Class:
+1.Pengelompokan Data dan Fungsi: class adalah fitur dalam pemrograman berorientasi objek yang memungkinkan kita untuk mengelompokkan data (variabel) dan fungsi (metode) bersama dalam satu unit. Ini membantu dalam pengorganisasian kode yang kompleks.
+2.Encapsulation: Dalam class, kita bisa menentukan aksesibilitas data dan metode dengan menggunakan private, protected, dan public, sehingga kita bisa mengatur bagaimana data dan fungsi tersebut bisa diakses dari luar class. Ini membantu dalam menciptakan struktur yang lebih aman dan terstruktur.
+3.Inheritance: Dengan menggunakan class, kita bisa menerapkan konsep inheritance, yang memungkinkan kita membuat class baru (child class) yang mewarisi atribut dan metode dari class yang sudah ada (parent class). Ini membantu dalam membangun hierarki objek yang fleksibel dan meminimalkan redundansi kode.
+4.Polymorphism: Polymorphism memungkinkan objek untuk diakses dengan menggunakan antarmuka umum, bahkan jika objek tersebut berasal dari class yang berbeda. Ini memungkinkan penggunaan yang lebih fleksibel dan kode yang lebih mudah di-maintain.
+
+### 3. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map]
+
+```C++
+//Dibuat Oleh Rizkulloh Dengan NIM 2311102142
+#include <iostream>
+#include <map>
+#include <string>
+
+using namespace std;
+
+int main() {
+  // Membuat map untuk menyimpan nomor tiket dengan nama penumpang
+  map<int, string> tiketBus_142;
+
+  // Menambahkan data ke dalam map
+  tiketBus_142[1] = "Alfi_142";
+  tiketBus_142[2] = "Bayu_142";
+  tiketBus_142[3] = "Cindy_142";
+  tiketBus_142[4] = "Eve_142";
+  tiketBus_142[5] = "Eva_142";
+
+  // Menampilkan nomor tiket bus beserta nama penumpang
+  cout << "Nomor Tiket Bus dan Nama Penumpang:" << endl;
+  for (const auto& pair : tiketBus_142) {
+      cout << "Nomor Tiket: " << pair.first << ", Nama Penumpang: " << pair.second << endl;
+  }
+
+  // Mengakses nama penumpang dengan nomor tiket tertentu
+  int nomorTiket = 3;
+  cout << "Nama Penumpang dengan Nomor Tiket " << nomorTiket << ": " << tiketBus_142[nomorTiket] << endl;
+
+  return 0;
+}
+```
+
+#### Output:
+
+![Screenshot Output Unguided 3](Output-Unguided-3_Rizkulloh.png)
+
+## ->Penjelasan Program:
+
+Program ini menggunakan map<int, string> untuk membuat map yang akan menyimpan nomor tiket sebagai kunci dan nama penumpang sebagai nilai. Data penumpang ditambahkan ke dalam map menggunakan nomor tiket sebagai kunci dan nama penumpang sebagai nilai. Kemudian, program menampilkan semua nomor tiket bus beserta nama penumpang yang terdaftar dalam map, menggunakan loop for untuk mengiterasi setiap pasangan kunci-nilai dalam map. Terakhir, program mengakses nama penumpang dengan nomor tiket tertentu menggunakan operator []
+
+## Perbedaan Array dengan Map:
+
+1.  Penyimpanan Data: Array menyimpan data secara terurut berdasarkan indeks, sedangkan map menyimpan data dalam bentuk pasangan kunci-nilai yang tidak terurut.
+2.  Akses Data: Untuk mengakses data dalam array, kita menggunakan indeks sebagai kunci. Sedangkan dalam map, kita menggunakan kunci yang bisa berupa tipe data apapun, tidak hanya integer.
+3.  Ukuran: Ukuran array biasanya tetap, sedangkan ukuran map bisa berubah sesuai dengan jumlah elemen yang disimpan.
+4.  Ketersediaan Fungsi: Map menyediakan berbagai fungsi yang memudahkan manipulasi data, seperti insert(), erase(), dan find(), yang tidak tersedia dalam array.
+
+## ->Kesimpulan
+
+Fleksibilitas: Map memberikan fleksibilitas dalam mengelola data, karena kita bisa menggunakan tipe data apa pun sebagai kunci dan nilai. Keuntungan dari Penggunaan Map: Dengan menggunakan map, kita dapat dengan mudah menyimpan dan mengakses data yang terkait satu sama lain, seperti dalam kasus ini, menyimpan nomor tiket dengan nama penumpang. Penamaan Variable: Penambahan "\_142" setelah nama variable (tiketBus_142) bertujuan untuk membedakan variable tersebut dari variable lain yang mungkin memiliki nama yang sama dalam konteks yang berbeda.
 
 ## Referensi
 
