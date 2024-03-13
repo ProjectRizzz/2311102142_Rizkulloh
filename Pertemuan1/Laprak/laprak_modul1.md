@@ -201,10 +201,6 @@ int main() {
 }
 ```
 
-#### Output:
-
-![Screenshot Output Unguided 1](Screenshot_Output_Unguided-1_Rizkulloh.png)
-
 ## ->Penjelasan Program:
 
 Program meminta pengguna untuk memilih operator aritmatika (A, B, C, atau D) dan memasukkan dua angka.
