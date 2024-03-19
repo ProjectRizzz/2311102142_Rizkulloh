@@ -338,17 +338,17 @@ Program C++ di atas merupakan program sederhana yang meminta pengguna untuk mema
 
 Penjelasan langkah demi langkah:
 
-1.Program meminta pengguna untuk memasukkan ukuran array.
-2.Array arr dibuat dengan ukuran yang dimasukkan oleh pengguna.
-3.Pengguna diminta untuk memasukkan nilai-nilai array.
-4.Program memberikan pilihan kepada pengguna untuk memilih operasi yang ingin dilakukan.
-5.Bergantung pada pilihan pengguna, program menjalankan proses yang sesuai menggunakan switch-case:
-Jika pengguna memilih 1, program mencari nilai maksimum dalam array.
-Jika pengguna memilih 2, program mencari nilai minimum dalam array.
-Jika pengguna memilih 3, program menghitung nilai rata-rata dari array.
-Jika pilihan tidak valid, program memberikan pesan kesalahan.
-6.Setelah operasi selesai dilakukan, program meminta pengguna apakah ingin melakukan operasi lain atau tidak.
-7.Jika pengguna memilih untuk melanjutkan, program akan kembali ke langkah 4. Jika tidak, program selesai.
+1. Program meminta pengguna untuk memasukkan ukuran array.
+2. Array arr dibuat dengan ukuran yang dimasukkan oleh pengguna.
+3. Pengguna diminta untuk memasukkan nilai-nilai array.
+4. Program memberikan pilihan kepada pengguna untuk memilih operasi yang ingin dilakukan.
+5. Bergantung pada pilihan pengguna, program menjalankan proses yang sesuai menggunakan switch-case:
+   Jika pengguna memilih 1, program mencari nilai maksimum dalam array.
+   Jika pengguna memilih 2, program mencari nilai minimum dalam array.
+   Jika pengguna memilih 3, program menghitung nilai rata-rata dari array.
+   Jika pilihan tidak valid, program memberikan pesan kesalahan.
+6. Setelah operasi selesai dilakukan, program meminta pengguna apakah ingin melakukan operasi lain atau tidak.
+7. Jika pengguna memilih untuk melanjutkan, program akan kembali ke langkah 4. Jika tidak, program selesai.
 
 ## ->Kesimpulan
 
