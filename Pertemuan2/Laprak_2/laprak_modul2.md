@@ -105,7 +105,24 @@ int main(){
 }
 ```
 
-->
+### ->Penjelasan
+
+Program di atas adalah sebuah program C++ yang meminta pengguna untuk memasukkan panjang array dan sejumlah angka untuk diisi ke dalam array tersebut. Kemudian, program akan mencari nilai maksimum dari angka-angka yang dimasukkan oleh pengguna dan menampilkan nilai maksimum beserta lokasinya dalam array.
+
+Berikut adalah deskripsi langkah-langkah programnya:
+
+1. Program meminta pengguna untuk memasukkan panjang array melalui pesan "Masukkan panjang array: ".
+2. Nilai panjang array dimasukkan oleh pengguna dan disimpan dalam variabel a.
+3. Program membuat array array dengan panjang sesuai yang dimasukkan oleh pengguna menggunakan nilai a.
+4. Pesan "Masukkan [panjang array] angka" ditampilkan, dimana [panjang array] adalah nilai yang dimasukkan pengguna sebelumnya.
+5. Pengguna diminta untuk memasukkan sejumlah angka sebanyak panjang array yang telah ditentukan sebelumnya.
+6. Setiap angka yang dimasukkan oleh pengguna diminta melalui pesan "Array ke-[indeks]: ", dimana [indeks] adalah indeks array yang sedang diisi.
+7. Angka yang dimasukkan oleh pengguna disimpan di dalam array array.
+8. Program mencari nilai maksimum dari angka-angka yang ada dalam array menggunakan loop for.
+9. Saat mencari nilai maksimum, program membandingkan setiap elemen array dengan nilai maksimum sementara yang disimpan dalam variabel maks.
+10. Jika ditemukan angka yang lebih besar dari nilai maksimum sementara, maka nilai maksimum sementara tersebut akan diperbarui bersama dengan lokasinya dalam array (lokasi).
+11. Setelah loop selesai, nilai maksimum dari array beserta lokasinya akan ditampilkan melalui pesan "Nilai maksimum adalah [nilai maksimum] berada di Array ke [lokasi]".
+12. Program selesai.
 
 ## Unguided
 
