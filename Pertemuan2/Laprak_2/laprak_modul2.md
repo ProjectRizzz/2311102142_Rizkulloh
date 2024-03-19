@@ -244,7 +244,7 @@ Setelah semua nilai dimasukkan, program menampilkan isi array ke layar menggunak
 
 Program ini memperlihatkan cara menggunakan array tiga dimensi dalam bahasa pemrograman C++. Array tiga dimensi digunakan untuk menyimpan data dalam bentuk tiga dimensi, seperti dalam kasus ini, di mana data disusun dalam baris, kolom, dan lapisan. Program memungkinkan pengguna untuk memasukkan data ke dalam array dan menampilkan isi array tersebut.
 
-### 3. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map]
+### 3. [Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!]
 
 ```C++
 //Dibuat Oleh Rizkulloh Dengan NIM 2311102142
