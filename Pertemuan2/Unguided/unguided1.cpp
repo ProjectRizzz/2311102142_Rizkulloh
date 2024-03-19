@@ -8,7 +8,7 @@ int main() {
     int jmlGenap_142 = 0;
     int jmlGanjil_142 = 0;
 
-    cout << "Masukkan 10 angka dipisahkan oleh spasi:\n";
+    cout << "Masukkan 10 angka dipisahkan oleh spasi: ";
     for (int i = 0; i < 10; ++i) {
         cin >> angka_142[i];
     }

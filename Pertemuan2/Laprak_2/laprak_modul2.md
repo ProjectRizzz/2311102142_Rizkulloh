@@ -167,7 +167,7 @@ int main() {
 
 #### Output:
 
-![Screenshot Output Unguided 1](Screenshot_Output_-Laprak2_unguided-1_Rizkulloh.png)
+![Screenshot Output Unguided 1](Output_Unguided1_Rizkulloh.png)
 
 ## ->Penjelasan Program:
 
