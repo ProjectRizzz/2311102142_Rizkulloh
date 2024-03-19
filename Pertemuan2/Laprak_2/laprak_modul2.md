@@ -109,7 +109,9 @@ int main(){
 
 ## Unguided
 
-### 1. [Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user](soal.png)
+### 1. [Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user]
+
+![Screenshot soal 1](soal.png)
 
 ```C++
 //Di buat oleh Rizkulloh Alpriyansah dengan nim 2311102142
@@ -225,7 +227,7 @@ int main() {
 #### Output:
 
 ![Screenshot Output Unguided 2](Output_unguided2_pt1.png)
-(Output_unguided2_pt2.png)
+![Screenshot Output Unguided 2](Output_unguided2_pt2.png)
 
 ## ->Penjelasan Program:
 
