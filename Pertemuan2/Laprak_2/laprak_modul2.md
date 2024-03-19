@@ -4,29 +4,16 @@
 
 ## Dasar Teori
 
-Dasar Teori tentang Array dalam C++
-Array adalah struktur data dalam bahasa pemrograman C++ yang dapat menyimpan sejumlah elemen data dari tipe yang sama dalam urutan yang terdefinisi.
-Setiap elemen dalam array diakses menggunakan indeks yang menunjukkan posisi relatifnya dalam array.
+Array merupakan kumpulan variabel yang terstruktur, digunakan untuk menyimpan data dengan tipe yang serupa atau data-data yang disusun secara berurutan. Di dalamnya, setiap elemen memiliki tipe data yang serupa. Indeks digunakan untuk mengakses setiap elemen yang disimpan dalam array, sedangkan panjang atau length menyatakan jumlah total elemen yang tersimpan di dalamnya. Secara umum, terdapat tiga jenis tipe data array yang sering dikenal:
 
-Deklarasi Array:
-Untuk mendeklarasikan array dalam C++, kita perlu menentukan tipe data yang akan disimpan dalam array serta jumlah elemen yang akan ditampung.
+Array Satu Dimensi:
+Array satu dimensi adalah kumpulan elemen yang disusun secara linear. Elemen-elemen ini dapat diakses menggunakan satu indeks. Keunggulan dari array satu dimensi adalah kemudahan penggunaan dan pembacaan. Contohnya, kita dapat menggunakan array Nilai[5] untuk menyimpan 5 nilai integer atau Nama[10] untuk menyimpan 10 nama string.
 
-Inisialisasi Array:
-Array bisa diinisialisasi saat mendeklarasikannya atau setelahnya.
+Array Dua Dimensi:
+Array dua dimensi adalah struktur data yang memiliki dua dimensi, sering kali dijelaskan sebagai tabel dengan baris dan kolom. Elemen-elemen dalam array ini diakses menggunakan dua indeks yang mewakili posisi baris dan kolomnya. Array ini berguna untuk menyimpan data yang memerlukan pengaturan dua dimensi, seperti matriks. Sebagai contoh, kita dapat menggunakan array NilaiUjian[3][5] untuk menyimpan nilai ujian 3 siswa untuk 5 mata pelajaran yang berbeda.
 
-Mengakses Elemen Array:
-Elemen-elemen dalam array diakses menggunakan indeksnya.
-
-Operasi pada Array:
-Berbagai operasi dapat dilakukan pada array, seperti pengisian nilai, pencarian nilai maksimum/minimum, atau pengurutan elemen-elemennya.
-
-Keterbatasan Array:
-
-Ukuran array harus ditentukan pada saat kompilasi, yang berarti kita perlu mengetahui berapa banyak elemen yang akan disimpan dalam array sebelum program dijalankan.
-Array tidak dapat diperbesar atau diperkecil secara dinamis saat program berjalan.
-Penanganan Array yang Fleksibel:
-
-Untuk menangani keterbatasan array, C++ menyediakan mekanisme lain seperti std::vector yang dapat memperbesar atau memperkecil ukurannya sesuai kebutuhan.
+Array Multidimensi:
+Array multidimensi adalah struktur data yang memiliki lebih dari dua dimensi. Ini memungkinkan representasi data dengan lebih banyak tingkat hierarki dan kompleksitas. Array ini digunakan untuk menyimpan data yang memerlukan struktur yang lebih kompleks, seperti data spasial atau temporal. Contohnya, Warna[3][3][3] dapat digunakan untuk menyimpan data warna RGB untuk 3 objek, di mana setiap objek memiliki 3 bagian dan setiap bagian memiliki 3 warna yang berbeda.
 
 ## Guided
 
@@ -122,7 +109,7 @@ int main(){
 
 ## Unguided
 
-### 1. [Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user]
+### 1. [Buatlah program untuk menampilkan Output seperti berikut dengan data yang diinputkan oleh user](soal.png)
 
 ```C++
 //Di buat oleh Rizkulloh Alpriyansah dengan nim 2311102142
@@ -171,7 +158,19 @@ int main() {
 
 ## ->Penjelasan Program:
 
+Program C++ di atas meminta pengguna untuk memasukkan 10 angka yang dipisahkan oleh spasi. Setelah menerima input, program memisahkan angka-angka tersebut menjadi dua array terpisah: satu untuk angka genap dan satu lagi untuk angka ganjil. Kemudian, program mencetak kedua array tersebut ke layar, menampilkan angka genap terlebih dahulu, diikuti oleh angka ganjil.
+
+Berikut adalah kesimpulan singkat dari program tersebut:
+
+1. Program meminta pengguna untuk memasukkan 10 angka.
+2. Angka-angka tersebut disimpan dalam array `angka_142`.
+3. Program memisahkan angka-angka tersebut menjadi dua array terpisah: `angkaGenap_142` untuk angka genap dan `angkaGanjil_142` untuk angka ganjil.
+4. Jumlah angka genap dan ganjil disimpan dalam variabel `jmlGenap_142` dan `jmlGanjil_142`.
+5. Program mencetak array angka genap dan ganjil ke layar.
+
 ## ->Kesimpulan
+
+Program C++ tersebut meminta pengguna untuk memasukkan 10 angka, kemudian memisahkan angka-angka tersebut menjadi dua kategori: angka genap dan angka ganjil. Setelah itu, program mencetak kedua kategori angka tersebut ke layar.
 
 ### 2. [Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user]
 
@@ -225,11 +224,23 @@ int main() {
 
 #### Output:
 
-![Screenshot Output Unguided 2]()
+![Screenshot Output Unguided 2](Output_unguided2_pt1.png)
+(Output_unguided2_pt2.png)
 
 ## ->Penjelasan Program:
 
-## Penjelasan class dan struct
+Program C++ di atas merupakan contoh penggunaan array tiga dimensi. Program meminta pengguna untuk memasukkan jumlah elemen untuk setiap dimensi array, kemudian membuat array tiga dimensi sesuai dengan ukuran yang dimasukkan. Setelah itu, program meminta pengguna untuk memasukkan nilai-nilai untuk setiap elemen array dan menampilkannya ke layar.
+
+Penjelasan langkah demi langkah:
+
+Pertama, program meminta pengguna untuk memasukkan jumlah elemen untuk masing-masing dimensi array.
+Array tiga dimensi array3D dideklarasikan dengan ukuran yang dimasukkan pengguna.
+Pengguna diminta untuk memasukkan nilai untuk setiap elemen array menggunakan tiga loop bersarang, masing-masing untuk dimensi pertama, kedua, dan ketiga.
+Setelah semua nilai dimasukkan, program menampilkan isi array ke layar menggunakan loop bersarang.
+
+## -> Kesimpulan
+
+Program ini memperlihatkan cara menggunakan array tiga dimensi dalam bahasa pemrograman C++. Array tiga dimensi digunakan untuk menyimpan data dalam bentuk tiga dimensi, seperti dalam kasus ini, di mana data disusun dalam baris, kolom, dan lapisan. Program memungkinkan pengguna untuk memasukkan data ke dalam array dan menampilkan isi array tersebut.
 
 ### 3. [Buat dan jelaskan program menggunakan fungsi map dan jelaskan perbedaan dari array dengan map]
 
@@ -317,11 +328,29 @@ int main() {
 
 #### Output:
 
-![Screenshot Output Unguided 3]()
+![Screenshot Output Unguided 3](Output_unguided3_Rizkulloh.png)
 
-## ->Penjelasan Program:
+## ->Penjelasan Program
+
+Program C++ di atas merupakan program sederhana yang meminta pengguna untuk memasukkan ukuran array dan nilai-nilai dalam array tersebut. Kemudian, program memberikan pilihan kepada pengguna untuk melakukan operasi tertentu seperti mencari nilai maksimum, nilai minimum, atau nilai rata-rata dari elemen-elemen array.
+
+Penjelasan langkah demi langkah:
+
+1.Program meminta pengguna untuk memasukkan ukuran array.
+2.Array arr dibuat dengan ukuran yang dimasukkan oleh pengguna.
+3.Pengguna diminta untuk memasukkan nilai-nilai array.
+4.Program memberikan pilihan kepada pengguna untuk memilih operasi yang ingin dilakukan.
+5.Bergantung pada pilihan pengguna, program menjalankan proses yang sesuai menggunakan switch-case:
+Jika pengguna memilih 1, program mencari nilai maksimum dalam array.
+Jika pengguna memilih 2, program mencari nilai minimum dalam array.
+Jika pengguna memilih 3, program menghitung nilai rata-rata dari array.
+Jika pilihan tidak valid, program memberikan pesan kesalahan.
+6.Setelah operasi selesai dilakukan, program meminta pengguna apakah ingin melakukan operasi lain atau tidak.
+7.Jika pengguna memilih untuk melanjutkan, program akan kembali ke langkah 4. Jika tidak, program selesai.
 
 ## ->Kesimpulan
+
+Program ini memungkinkan pengguna untuk memasukkan nilai-nilai ke dalam array dan melakukan operasi seperti mencari nilai maksimum, minimum, atau rata-rata dari elemen-elemen array. Pengguna dapat melakukan operasi berulang sesuai dengan keinginan mereka.
 
 ## Referensi
 
