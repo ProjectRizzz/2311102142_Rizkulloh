@@ -678,7 +678,9 @@ int main() {
 
 #### Output:
 
-![Screenshot Output Unguided 1](Output_Unguided1_Rizkulloh.png)
+![Screenshot Output Unguided 1](Unguided1_A.png)
+![Screenshot Output Unguided 1](Unguided1_B.png)
+![Screenshot Output Unguided 1](Unguided1_C.png)
 
 ## ->Penjelasan Program:
 
@@ -710,155 +712,271 @@ Dengan antarmuka yang sederhana, pengguna dapat dengan mudah mengelola data maha
 
 Program ini memberikan solusi yang sederhana namun efektif dalam pengelolaan data mahasiswa. Dengan antarmuka yang user-friendly dan operasi-operasi yang mudah dipahami, program ini dapat membantu pengguna dalam mengelola data mahasiswa dengan lebih efisien.
 
-### 2. [Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user]
+### 2. [Soal mengenai Double Linked List
+
+Modifikasi Guided Double Linked List dilakukan dengan penambahan
+operasi untuk menambah data, menghapus, dan update di tengah / di
+urutan tertentu yang diminta. Selain itu, buatlah agar tampilannya
+menampilkan Nama produk dan harga.
+Nama Produk Harga
+Originote 60.000
+Somethinc 150.000
+Skintific 100.000
+Wardah 50.000
+Hanasui 30.000
+Case:
+
+1. Tambahkan produk Azarine dengan harga 65000 diantara
+   Somethinc dan Skintific
+2. Hapus produk wardah
+3. Update produk Hanasui menjadi Cleora dengan harga 55.000
+4. Tampilkan menu seperti dibawah ini
+   Toko Skincare Purwokerto
+5. Tambah Data
+6. Hapus Data
+7. Update Data
+8. Tambah Data Urutan Tertentu
+9. Hapus Data Urutan Tertentu
+10. Hapus Seluruh Data
+11. Tampilkan Data
+12. Exit
+    Pada menu 7, tampilan akhirnya akan menjadi seperti dibawah
+    ini :
+    Nama Produk Harga
+    Originote 60.000
+    Somethinc 150.000
+    Azarine 65.000
+    Skintific 100.000
+    Cleora 55.000]
 
 ```C++
 // Dibuat oleh Rizkulloh Dengan NIM 2311102142
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-int main() {
-    int x_142, y_142, z_142;
+// Struktur node untuk menyimpan data produk
+struct ProductNode {
+    string name;
+    int price;
+    ProductNode* prev;
+    ProductNode* next;
 
-    // Meminta pengguna untuk memasukkan ukuran array
-    cout << "Masukkan jumlah elemen untuk dimensi pertama: ";
-    cin >> x_142;
-    cout << "Masukkan jumlah elemen untuk dimensi kedua: ";
-    cin >> y_142;
-    cout << "Masukkan jumlah elemen untuk dimensi ketiga: ";
-    cin >> z_142;
+    ProductNode(string n, int p) : name(n), price(p), prev(nullptr), next(nullptr) {}
+};
 
-    // Deklarasi array tiga dimensi sesuai dengan ukuran yang dimasukkan pengguna
-    int array3D[x_142][y_142][z_142];
+// Kelas untuk Double Linked List
+class DoubleLinkedList {
+private:
+    ProductNode* head;
+    ProductNode* tail;
 
-    // Memasukkan nilai ke dalam array
-    cout << "Masukkan elemen-elemen array:" << endl;
-    for (int i = 0; i < x_142; ++i) {
-        for (int j = 0; j < y_142; ++j) {
-            for (int k = 0; k < z_142; ++k) {
-                cout << "Masukkan nilai untuk elemen [" << i << "][" << j << "][" << k << "]: ";
-                cin >> array3D[i][j][k];
-            }
-        }
-    }
+public:
+    DoubleLinkedList() : head(nullptr), tail(nullptr) {}
 
-    // Menampilkan isi array
-    cout << "Isi array:" << endl;
-    for (int i = 0; i < x_142; ++i) {
-        for (int j = 0; j < y_142; ++j) {
-            for (int k = 0; k < z_142; ++k) {
-                cout << array3D[i][j][k] << " ";
-            }
-            cout << endl;
-        }
-        cout << endl;
-    }
-
-    return 0;
+    ProductNode* getHead() {
+    return head;
 }
 
-```
-
-#### Output:
-
-![Screenshot Output Unguided 2](Output_unguided2_pt1.png)
-![Screenshot Output Unguided 2](Output_unguided2_pt2.png)
-
-## ->Penjelasan Program:
-
-Program C++ di atas merupakan contoh penggunaan array tiga dimensi. Program meminta pengguna untuk memasukkan jumlah elemen untuk setiap dimensi array, kemudian membuat array tiga dimensi sesuai dengan ukuran yang dimasukkan. Setelah itu, program meminta pengguna untuk memasukkan nilai-nilai untuk setiap elemen array dan menampilkannya ke layar.
-
-Penjelasan langkah demi langkah:
-
-Pertama, program meminta pengguna untuk memasukkan jumlah elemen untuk masing-masing dimensi array.
-Array tiga dimensi array3D dideklarasikan dengan ukuran yang dimasukkan pengguna.
-Pengguna diminta untuk memasukkan nilai untuk setiap elemen array menggunakan tiga loop bersarang, masing-masing untuk dimensi pertama, kedua, dan ketiga.
-Setelah semua nilai dimasukkan, program menampilkan isi array ke layar menggunakan loop bersarang.
-
-## -> Kesimpulan
-
-Program ini memperlihatkan cara menggunakan array tiga dimensi dalam bahasa pemrograman C++. Array tiga dimensi digunakan untuk menyimpan data dalam bentuk tiga dimensi, seperti dalam kasus ini, di mana data disusun dalam baris, kolom, dan lapisan. Program memungkinkan pengguna untuk memasukkan data ke dalam array dan menampilkan isi array tersebut.
-
-### 3. [Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!]
-
-```C++
-//Dibuat Oleh Rizkulloh Dengan NIM 2311102142
-#include <iostream>
-#include <climits>
-
-using namespace std;
-
-int main() {
-    int size;
-
-    // Meminta pengguna untuk memasukkan ukuran array
-    cout << "Masukkan jumlah elemen dalam array: ";
-    cin >> size;
-
-    // Membuat array sesuai dengan ukuran yang dimasukkan pengguna
-    int arr[size];
-
-    // Meminta pengguna untuk memasukkan nilai-nilai array
-    cout << "Masukkan nilai-nilai array:" << endl;
-    for (int i = 0; i < size; ++i) {
-        cout << "Nilai elemen ke-" << i + 1 << ": ";
-        cin >> arr[i];
+    // Method untuk menambahkan data produk di akhir list
+    void addProduct(string name, int price) {
+        ProductNode* newNode = new ProductNode(name, price);
+        if (!head) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail->next = newNode;
+            newNode->prev = tail;
+            tail = newNode;
+        }
     }
 
-    int choice;
-    char repeat;
+    // Method untuk menampilkan semua data produk
+    void displayProducts() {
+        ProductNode* current = head;
+        cout << "Nama Produk   Harga" << endl;
+        while (current) {
+            cout << current->name << "   " << current->price << endl;
+            current = current->next;
+        }
+    }
 
+    // Method untuk menambahkan data produk di urutan tertentu
+    void addProductAtPosition(string name, int price, string positionName) {
+        ProductNode* newNode = new ProductNode(name, price);
+        ProductNode* current = head;
+        while (current) {
+            if (current->name == positionName) {
+                newNode->next = current->next;
+                newNode->prev = current;
+                if (current->next) {
+                    current->next->prev = newNode;
+                } else {
+                    tail = newNode;
+                }
+                current->next = newNode;
+                break;
+            }
+            current = current->next;
+        }
+    }
+
+    // Method untuk menghapus data produk
+    void deleteProduct(string name) {
+        ProductNode* current = head;
+        while (current) {
+            if (current->name == name) {
+                if (current->prev) {
+                    current->prev->next = current->next;
+                } else {
+                    head = current->next;
+                }
+                if (current->next) {
+                    current->next->prev = current->prev;
+                } else {
+                    tail = current->prev;
+                }
+                delete current;
+                break;
+            }
+            current = current->next;
+        }
+    }
+
+    // Method untuk mengupdate data produk
+    void updateProduct(string name, string newName, int newPrice) {
+        ProductNode* current = head;
+        while (current) {
+            if (current->name == name) {
+                current->name = newName;
+                current->price = newPrice;
+                break;
+            }
+            current = current->next;
+        }
+    }
+
+    // Method untuk menghapus seluruh data produk
+    void deleteAllProducts() {
+        ProductNode* current = head;
+        while (current) {
+            ProductNode* temp = current;
+            current = current->next;
+            delete temp;
+        }
+        head = nullptr;
+        tail = nullptr;
+    }
+};
+
+int main() {
+    DoubleLinkedList products;
+
+    // Menambahkan data produk awal
+    products.addProduct("Originote", 60000);
+    products.addProduct("Somethinc", 150000);
+    products.addProduct("Skintific", 100000);
+    products.addProduct("Wardah", 50000);
+    products.addProduct("Hanasui", 30000);
+
+    // Menampilkan menu
+    int choice;
     do {
-        // Menampilkan menu
-        cout << "Pilih operasi yang ingin dilakukan:" << endl;
-        cout << "1. Cari nilai maksimum" << endl;
-        cout << "2. Cari nilai minimum" << endl;
-        cout << "3. Cari nilai rata-rata" << endl;
+        cout << "Toko Skincare Purwokerto" << endl;
+        cout << "1. Tambah Data" << endl;
+        cout << "2. Hapus Data" << endl;
+        cout << "3. Update Data" << endl;
+        cout << "4. Tambah Data Urutan Tertentu" << endl;
+        cout << "5. Hapus Data Urutan Tertentu" << endl;
+        cout << "6. Hapus Seluruh Data" << endl;
+        cout << "7. Tampilkan Data" << endl;
+        cout << "8. Exit" << endl;
         cout << "Pilihan: ";
         cin >> choice;
 
-        // Proses sesuai dengan pilihan pengguna
         switch (choice) {
             case 1: {
-                // Mencari nilai maksimum
-                int maxVal = INT_MIN;
-                for (int i = 0; i < size; ++i) {
-                    if (arr[i] > maxVal) {
-                        maxVal = arr[i];
-                    }
-                }
-                cout << "Nilai maksimum dalam array: " << maxVal << endl;
+                string name;
+                int price;
+                cout << "Masukkan nama produk: ";
+                cin >> name;
+                cout << "Masukkan harga: ";
+                cin >> price;
+                products.addProduct(name, price);
                 break;
             }
             case 2: {
-                // Mencari nilai minimum
-                int minVal = INT_MAX;
-                for (int i = 0; i < size; ++i) {
-                    if (arr[i] < minVal) {
-                        minVal = arr[i];
-                    }
-                }
-                cout << "Nilai minimum dalam array: " << minVal << endl;
+                string name;
+                cout << "Masukkan nama produk yang ingin dihapus: ";
+                cin >> name;
+                products.deleteProduct(name);
                 break;
             }
             case 3: {
-                // Menghitung nilai rata-rata
-                int sum = 0;
-                for (int i = 0; i < size; ++i) {
-                    sum += arr[i];
-                }
-                double average = static_cast<double>(sum) / size;
-                cout << "Nilai rata-rata dari array: " << average << endl;
+                string name, newName;
+                int newPrice;
+                cout << "Masukkan nama produk yang ingin diupdate: ";
+                cin >> name;
+                cout << "Masukkan nama baru: ";
+                cin >> newName;
+                cout << "Masukkan harga baru: ";
+                cin >> newPrice;
+                products.updateProduct(name, newName, newPrice);
                 break;
             }
-            default:
-                cout << "Pilihan tidak valid!" << endl;
-        }
+            case 4: {
+    string name, positionName;
+    int price;
+    cout << "Masukkan nama produk yang ingin ditambahkan: ";
+    cin >> name;
+    cout << "Masukkan harga: ";
+    cin >> price;
+    cout << "Masukkan nama produk setelahnya: ";
+    cin >> positionName;
 
-        cout << "Mau melakukan operasi lain? (y/n): ";
-        cin >> repeat;
-    } while (repeat == 'y' || repeat == 'Y');
+    // Periksa apakah produk setelahnya ada dalam daftar
+    ProductNode* current = products.getHead();
+    bool found = false;
+    while (current) {
+        if (current->name == positionName) {
+            found = true;
+            break;
+        }
+        current = current->next;
+    }
+
+    // Jika produk ditemukan, tambahkan produk baru
+    if (found) {
+        products.addProductAtPosition(name, price, positionName);
+    } else {
+        cout << "Produk '" << positionName << "' tidak ditemukan dalam daftar." << endl;
+    }
+    break;
+}
+            case 5: {
+                // Tidak diimplementasikan untuk kasus ini
+                cout << "Fitur belum diimplementasikan." << endl;
+                break;
+            }
+            case 6: {
+                products.deleteAllProducts();
+                break;
+            }
+            case 7: {
+                products.displayProducts();
+                break;
+            }
+            case 8: {
+                cout << "Terima kasih!" << endl;
+                break;
+            }
+            default: {
+                cout << "Pilihan tidak valid. Silakan coba lagi." << endl;
+                break;
+            }
+        }
+    } while (choice != 8);
 
     return 0;
 }
@@ -866,29 +984,16 @@ int main() {
 
 #### Output:
 
-![Screenshot Output Unguided 3](Output_unguided3_Rizkulloh.png)
+![Screenshot Output Unguided 2](Unguided2_a.png)
+![Screenshot Output Unguided 2](Unguided2_b.png)
 
 ## ->Penjelasan Program
 
-Program C++ di atas merupakan program sederhana yang meminta pengguna untuk memasukkan ukuran array dan nilai-nilai dalam array tersebut. Kemudian, program memberikan pilihan kepada pengguna untuk melakukan operasi tertentu seperti mencari nilai maksimum, nilai minimum, atau nilai rata-rata dari elemen-elemen array.
-
-Penjelasan langkah demi langkah:
-
-1. Program meminta pengguna untuk memasukkan ukuran array.
-2. Array arr dibuat dengan ukuran yang dimasukkan oleh pengguna.
-3. Pengguna diminta untuk memasukkan nilai-nilai array.
-4. Program memberikan pilihan kepada pengguna untuk memilih operasi yang ingin dilakukan.
-5. Bergantung pada pilihan pengguna, program menjalankan proses yang sesuai menggunakan switch-case:
-   Jika pengguna memilih 1, program mencari nilai maksimum dalam array.
-   Jika pengguna memilih 2, program mencari nilai minimum dalam array.
-   Jika pengguna memilih 3, program menghitung nilai rata-rata dari array.
-   Jika pilihan tidak valid, program memberikan pesan kesalahan.
-6. Setelah operasi selesai dilakukan, program meminta pengguna apakah ingin melakukan operasi lain atau tidak.
-7. Jika pengguna memilih untuk melanjutkan, program akan kembali ke langkah 4. Jika tidak, program selesai.
+Program C++ di atas merupakan implementasi sederhana dari sebuah aplikasi toko skincare yang menggunakan struktur data double linked list untuk menyimpan dan mengelola data produk. Dalam program ini, terdapat struktur ProductNode yang menyimpan informasi tentang nama dan harga produk, serta pointer ke node sebelumnya dan node selanjutnya dalam linked list. Kelas DoubleLinkedList digunakan untuk mengelola linked list, dengan metode untuk menambahkan, menampilkan, menghapus, dan mengupdate produk. Program ini juga menyediakan fitur untuk menambahkan produk di urutan tertentu, meskipun belum diimplementasikan fitur untuk menghapus produk dari urutan tertentu. Dengan menggunakan menu interaktif, pengguna dapat memilih operasi yang ingin dilakukan seperti menambah, menghapus, mengupdate, atau menampilkan produk, serta menghapus semua data produk atau keluar dari program. Ini adalah contoh sederhana dari penggunaan struktur data dalam membuat aplikasi yang memungkinkan pengelolaan data produk secara efisien.
 
 ## ->Kesimpulan
 
-Program ini memungkinkan pengguna untuk memasukkan nilai-nilai ke dalam array dan melakukan operasi seperti mencari nilai maksimum, minimum, atau rata-rata dari elemen-elemen array. Pengguna dapat melakukan operasi berulang sesuai dengan keinginan mereka.
+Program C++ di atas adalah contoh implementasi sederhana dari aplikasi toko skincare menggunakan struktur data double linked list. Program ini memungkinkan pengguna untuk menambah, menghapus, mengupdate, dan menampilkan produk melalui menu interaktif. Meskipun beberapa fitur seperti penghapusan produk dari urutan tertentu belum diimplementasikan, program ini memberikan gambaran tentang penggunaan double linked list dalam pengelolaan data produk secara dinamis.
 
 ## Referensi
 

@@ -66,34 +66,30 @@ void insertBelakang_142(string nama_142, int usia_142) {
 }
 
 // tambah node di tengah
-void insertTengah_142(string nama_142, int usia_142, int posisi_142) {
-    if (posisi_142 < 1) {
-        cout << "Posisi diluar jangkauan" << endl;
-        return;
+void insertTengah_142(string name_142, int usia_142, int posisi_142) {
+    if (posisi_142 < 1 || posisi_142 > hitungList_142()) {
+        cout << "error" << endl;
     }
-
-    if (posisi_142 == 1) {
-        cout << "Posisi bukan posisi tengah" << endl;
-        return;
+    else if (posisi_142 == 1) {
+        cout << "error" << endl;
     }
-
-    if (posisi_142 > 1 && posisi_142 <= hitungList_142()) {
-        Node_142* baru_142 = new Node_142;
-        baru_142->nama_142 = nama_142;
+    else {
+        Node_142* baru_142, * bantu_142;
+        baru_142 = new Node_142();
+        baru_142->nama_142 = name_142;
         baru_142->usia_142 = usia_142;
 
-        Node_142* bantu_142 = head_142;
-        int nomor_142 = 1;
+        // tranversing
+        bantu_142 = head_142;
+        int nomor = 2;
 
-        while (nomor_142 < posisi_142 - 1) {
+        while (nomor < posisi_142) {
             bantu_142 = bantu_142->next_142;
-            nomor_142++;
+            nomor++;
         }
 
         baru_142->next_142 = bantu_142->next_142;
         bantu_142->next_142 = baru_142;
-    } else {
-        cout << "Posisi diluar jangkauan" << endl;
     }
 }
 
@@ -179,6 +175,7 @@ int main() {
     cout << "Masukkan nama mahasiswa yang ingin dihapus: ";
     cin >> nama_142;
     hapusTengah_142(nama_142);
+    tampil_142();
 
     cout << endl;
 
@@ -189,6 +186,7 @@ int main() {
     cout << "Masukkan usia : ";
     cin >> usia_142;
     insertTengah_142(nama_142, usia_142, 2);
+    tampil_142();
 
     cout << endl;
 
@@ -199,6 +197,7 @@ int main() {
     cout << "Masukkan usia : ";
     cin >> usia_142;
     insertDepan_142(nama_142, usia_142);
+    tampil_142();
 
     cout << endl;
 
@@ -213,6 +212,7 @@ int main() {
     cout << "Masukkan usia baru: ";
     cin >> gantiUmur_142;
     ubahData_142(cariNama_142, gantiNama_142, gantiUmur_142);
+    tampil_142();
 
     cout << endl;
 
