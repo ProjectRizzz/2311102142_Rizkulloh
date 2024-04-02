@@ -231,7 +231,7 @@ void tampilData_142(Node_142 *head_142)
     Node_142 *current_142 = head_142;
     while (current_142 != NULL)
     {
-        cout << "NAMA : " << current_142->nama_142 << " NIM : " << current_142->nim_142 << endl;
+        cout << "NAMA : " << current_142->nama_142 << " \tNIM : " << current_142->nim_142 << endl;
         current_142 = current_142->next_142;
     }
 }
