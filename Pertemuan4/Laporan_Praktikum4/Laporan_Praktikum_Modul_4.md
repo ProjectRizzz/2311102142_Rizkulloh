@@ -596,7 +596,7 @@ int main()
 
 ### ->Penjelasan
 
-Program ini menggunakan struct Node untuk membuat node baru dengan data dan pointer ke node selanjutnya. Fungsi isEmpty() digunakan untuk mengecek apakah Linked List Non-Circular kosong atau tidak. Fungsi insertDepan(), insertBelakang(), dan insertTengah() digunakan untuk menambahkan node baru di depan, di belakang, dan di tengah Linked List Non-Circular. Fungsi hapusDepan(), hapusBelakang(), dan hapusTengah() digunakan untuk menghapus node di depan, di belakang, dan di tengah Linked List Non-Circular. Fungsi tampil() digunakan untuk menampilkan isi Linked List Non-Circular.
+Program ini menggunakan struct Node untuk membuat node baru dengan data dan pointer ke node selanjutnya. Fungsi isEmpty() digunakan untuk mengecek apakah Linked List Circular kosong atau tidak. Fungsi insertDepan(), insertBelakang(), dan insertTengah() digunakan untuk menambahkan node baru di depan, di belakang, dan di tengah Linked List Circular. Fungsi hapusDepan(), hapusBelakang(), dan hapusTengah() digunakan untuk menghapus node di depan, di belakang, dan di tengah Linked List Circular. Fungsi tampil() digunakan untuk menampilkan isi Linked List Circular.
 
 ## Unguided
 
@@ -1027,9 +1027,86 @@ int main()
 
 ![Screenshot Output Hapus](Hapus.png)
 
+#### Output 2:
+
+![Screenshot Output Tampilan](TampilUnguided.png)
+
+#### Output 3:
+
+#### a. Tambahkan data berikut diantara Farrel dan Denis:
+
+Wati 2330004
+![Screenshot Output A](A.png)
+
+#### b. Hapus data Denis
+
+![Screenshot Output B](B.png)
+
+#### c. Tambahkan data berikut di awal:
+
+Owi 2330000
+![Screenshot Output C](C.png)
+
+#### d. Tambahkan data berikut di akhir:
+
+David 23300100
+![Screenshot Output D](D.png)
+
+#### e. Ubah data Udin menjadi data berikut:
+
+Idin 23300045
+![Screenshot Output E](E.png)
+
+#### f. Ubah data terkahir menjadi berikut:
+
+Lucy 23300101
+![Screenshot Output F](F.png)
+
+#### g. Hapus data awal
+
+![Screenshot Output G](Hapus.png)
+
+#### h. Ubah data awal menjadi berikut:
+
+Bagas 2330002
+![Screenshot Output H](H.png)
+
+#### i. Hapus data akhir
+
+![Screenshot Output I](I.png)
+
+#### j. Tampilkan seluruh data
+
+![Screenshot Output J](J.png)
+
 ## ->Penjelasan Program:
 
+Kode di atas merupakan implementasi dari linked list untuk menyimpan data mahasiswa (nama dan NIM) dengan menggunakan bahasa pemrograman C++. Berikut penjelasan singkat mengenai kode tersebut:
+
+Deklarasi Struktur Node_142: Struktur ini digunakan untuk merepresentasikan node dalam linked list. Setiap node memiliki dua string untuk menyimpan nama dan NIM mahasiswa, serta pointer yang menunjuk ke node selanjutnya dalam linked list.
+
+Fungsi-fungsi Operasi pada Linked List:
+
+tambahDepan_142: Menambahkan node baru di awal linked list.
+tambahBelakang_142: Menambahkan node baru di akhir linked list.
+tambahTengah_142: Menambahkan node baru di posisi tertentu dalam linked list.
+ubahDepan_142: Mengubah data pada node pertama dalam linked list.
+ubahBelakang_142: Mengubah data pada node terakhir dalam linked list.
+ubahTengah_142: Mengubah data pada node pada posisi tertentu dalam linked list.
+hapusDepan_142: Menghapus node pertama dalam linked list.
+hapusBelakang_142: Menghapus node terakhir dalam linked list.
+hapusTengah_142: Menghapus node pada posisi tertentu dalam linked list.
+hapusList_142: Menghapus seluruh isi linked list.
+tampilData_142: Menampilkan isi dari linked list.
+Fungsi main(): Fungsi utama program yang melakukan interaksi dengan pengguna melalui terminal. Pengguna dapat memilih operasi yang ingin dilakukan pada linked list, seperti menambahkan data, mengubah data, menghapus data, dan menampilkan data.
+
+Loop do-while: Digunakan untuk menjalankan program secara berulang selama pengguna belum memilih untuk keluar (pilihan_142 != 0)
+
 ## ->Kesimpulan
+
+Kode tersebut merupakan implementasi sederhana dari linked list dalam bahasa pemrograman C++. Program tersebut memungkinkan pengguna untuk melakukan berbagai operasi pada linked list, seperti menambah, mengubah, dan menghapus data, serta menampilkan isi dari linked list tersebut.
+
+Dengan menggunakan linked list, program ini dapat mengelola data mahasiswa dengan fleksibilitas dalam penambahan, pengubahan, dan penghapusan data tanpa perlu memperhatikan alokasi memori secara manual. Ini membuatnya menjadi struktur data yang berguna dan efisien untuk mengelola koleksi data dinamis dalam program.
 
 ## Referensi
 
