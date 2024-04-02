@@ -989,17 +989,43 @@ int main()
 }
 ```
 
-#### Output:
+#### Output 1:
 
-![Screenshot Output Tambah Depan](.png)
+#### Tambah Depan
+
+![Screenshot Output Tambah Depan](TamDepRizkulloh.png)
+
+#### Tambah Belakang
+
 ![Screenshot Output Tambah Belakang](TambahBelakang.png)
+
+#### Tambah Tengah
+
 ![Screenshot Output Tambah Tengah](TambahTengah.png)
+
+#### Tampilan
+
 ![Screenshot Output Tampilan](TampilAwal.png)
+
+#### Ubah Depan
+
 ![Screenshot Output Ubah Depan](UbahDepan.png)
+
+#### Ubah Belakang
+
 ![Screenshot Output Ubah Belakang](UbahBelakang.png)
+
+#### Ubah Tengah
+
 ![Screenshot Output Ubah Tengah](UbahTengah.png)
+
+#### Tampilan
+
 ![Screenshot Output Tampilan](TampilUbah.png)
-![Screenshot Output Hapus](.png)
+
+#### Hapus
+
+![Screenshot Output Hapus](Hapus.png)
 
 ## ->Penjelasan Program:
 
