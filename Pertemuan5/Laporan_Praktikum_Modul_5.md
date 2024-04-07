@@ -544,19 +544,19 @@ int main()
 
 #### Screenshot Bagian A
 
-![Screenshot Output Unguided1](A.png)
+![Screenshot Output Unguided1](SS_Output_Program/A.png)
 
 #### Screenshot Bagian B
 
-![Screenshot Output Unguided1](B.png)
+![Screenshot Output Unguided1](SS_Output_Program/B.png)
 
 #### Screenshot Bagian C
 
-![Screenshot Output Unguided1](C.png)
+![Screenshot Output Unguided1](SS_Output_Program/C.png)
 
 #### Screenshot Bagian D
 
-![Screenshot Output Unguided1](D.png)
+![Screenshot Output Unguided1](SS_Output_Program/D.png)
 
 ## ->Penjelasan Program:
 
