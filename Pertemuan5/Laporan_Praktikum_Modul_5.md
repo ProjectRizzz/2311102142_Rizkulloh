@@ -543,8 +543,11 @@ int main()
 #### Output :
 
 ![Screenshot Output Unguided1](Ss Unguided A.png)
+
 ![Screenshot Output Unguided1](Ss Unguided B.png)
+
 ![Screenshot Output Unguided1](Ss Unguided C.png)
+
 ![Screenshot Output Unguided1](Ss Unguided D.png)
 
 ## ->Penjelasan Program:
