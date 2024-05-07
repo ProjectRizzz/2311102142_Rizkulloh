@@ -390,7 +390,11 @@ int main()
 
 ## ->Penjelasan Program:
 
+Kode di atas adalah implementasi dari fungsi balikKalimat_142 yang menggunakan stack untuk membalikkan sebuah kalimat yang dimasukkan oleh pengguna. Pertama, setiap karakter dari kalimat dimasukkan ke dalam sebuah stack. Kemudian, karakter-karakter tersebut diambil dari stack satu per satu untuk membentuk kalimat terbalik. Hal ini dilakukan dengan mempop stack dan menyimpan karakternya dalam sebuah string. Setelah semua karakter telah diambil, kalimat terbalik tersebut kemudian ditampilkan. Kesimpulannya
+
 ## ->Kesimpulan
+
+Kode ini memanfaatkan struktur data stack untuk secara efisien membalikkan sebuah kalimat dengan kompleksitas waktu linier terhadap panjang kalimat. Ini adalah cara yang sederhana dan efektif untuk memahami penggunaan stack dalam memproses string.
 
 ## Referensi
 
