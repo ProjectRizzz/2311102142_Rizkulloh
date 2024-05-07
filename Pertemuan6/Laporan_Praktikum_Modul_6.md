@@ -316,7 +316,7 @@ int main()
 
 #### Output :
 
-![Screenshot Output Unguided1](Pictrus/unguided1.png)
+![Screenshot Output Unguided1](Picturs/unguided1.png)
 
 ## ->Penjelasan Program:
 
