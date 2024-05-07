@@ -334,6 +334,8 @@ Kalimat : Telkom Purwokerto
 
 Hasil : otrekowruP mokleT]
 
+![Screenshot Soal](Picturs/soal2.png)
+
 ```C++
 
 // Dibuat oleh Rizkulloh Alpriyansah dengan NIM 2311102142
