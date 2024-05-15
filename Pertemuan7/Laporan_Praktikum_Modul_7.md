@@ -1,6 +1,48 @@
-# <h1 align="center">Laporan Praktikum MODUL VI STACK</h1>
+# <h1 align="center">Laporan Praktikum MODUL VIII QUEUE</h1>
 
 <p align="center">Rizkulloh Alpriyansah</p>
+
+### Queue
+
+Queue adalah struktur data linear yang mengikuti prinsip First In First Out (FIFO), yang berarti elemen yang pertama dimasukkan ke dalam queue akan menjadi elemen yang pertama pula keluar. Queue mirip dengan antrian di kehidupan sehari-hari, seperti antrian pembayaran di kasir atau antrian kendaraan di jalan raya.
+
+### Operasi Dasar Queue
+
+1. **Enqueue**: Operasi untuk menambahkan elemen baru ke dalam queue pada posisi akhir.
+2. **Dequeue**: Operasi untuk menghapus elemen pertama dari queue.
+3. **Front**: Mengakses elemen pertama dari queue tanpa menghapusnya.
+4. **IsEmpty**: Memeriksa apakah queue kosong atau tidak.
+5. **IsFull**: Memeriksa apakah queue penuh atau tidak (pada implementasi yang menggunakan alokasi memori statis).
+
+### Implementasi Queue
+
+Queue dapat diimplementasikan menggunakan dua pendekatan utama: menggunakan array atau menggunakan linked list.
+
+1. **Array-based Queue**: Pada implementasi ini, queue direpresentasikan menggunakan array dengan dua pointer, yaitu `front` dan `rear`. `Front` menunjukkan elemen pertama dalam queue, sedangkan `rear` menunjukkan elemen terakhir. Operasi enqueue dilakukan dengan menambahkan elemen baru di posisi `rear`, sedangkan operasi dequeue dilakukan dengan menghapus elemen pada posisi `front`.
+
+2. **Linked List-based Queue**: Pada implementasi ini, queue direpresentasikan menggunakan linked list, di mana setiap elemen dalam queue direpresentasikan oleh node. Setiap node memiliki data dan pointer ke node berikutnya. Operasi enqueue dilakukan dengan menambahkan node baru di posisi akhir linked list (atau `back`), sedangkan operasi dequeue dilakukan dengan menghapus node pertama (atau `front`) dari linked list.
+
+### Keuntungan dan Kekurangan Queue
+
+- **Keuntungan**:
+
+  - Memungkinkan penyimpanan dan pengambilan data secara efisien sesuai prinsip FIFO.
+  - Cocok untuk masalah yang memerlukan penanganan antrian, seperti penjadwalan tugas atau penanganan pesan.
+
+- **Kekurangan**:
+  - Implementasi array-based queue memiliki batasan ukuran, sementara implementasi linked list membutuhkan alokasi memori tambahan.
+  - Operasi dequeue pada array-based queue dapat menjadi lambat jika banyak elemen perlu dipindahkan setelah penghapusan.
+
+### Contoh Penggunaan Queue
+
+Queue sering digunakan dalam berbagai aplikasi, termasuk:
+
+- Sistem antrian di tempat pelayanan seperti bank atau kasir supermarket.
+- Penjadwalan tugas dalam sistem operasi.
+- Penanganan pesan dalam komunikasi jaringan.
+- Buffering data dalam pemrosesan sinyal digital.
+
+Dengan prinsip FIFO-nya, queue merupakan struktur data yang penting dan umum digunakan dalam pemrograman komputer untuk menangani berbagai masalah yang melibatkan urutan dan penjadwalan.
 
 ## Dasar Teori
 
