@@ -375,7 +375,7 @@ int main()
 
 #### Output :
 
-![Screenshot Output Unguided Dua](picturs/unguided2.png)
+![Screenshot Output Unguided Dua](Picturs/unguided2.png)
 
 ## ->Penjelasan Program:
 
