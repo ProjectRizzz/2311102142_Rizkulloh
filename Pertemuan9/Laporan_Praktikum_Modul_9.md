@@ -1025,12 +1025,32 @@ int main()
 
 #### Output :
 
+#### 1
+
 ![Screenshot Output Unguided Dua](Pics/unguided2-1.png)
+
+#### 2
+
 ![Screenshot Output Unguided Dua](Pics/unguided2-2.png)
+
+#### 3
+
 ![Screenshot Output Unguided Dua](Pics/unguided2-3.png)
+
+#### 4
+
 ![Screenshot Output Unguided Dua](Pics/unguided2-4.png)
+
+#### 5
+
 ![Screenshot Output Unguided Dua](Pics/unguided2-5.png)
+
+#### 6
+
 ![Screenshot Output Unguided Dua](Pics/unguided2-6.png)
+
+#### 7
+
 ![Screenshot Output Unguided Dua](Pics/unguided2-7.png)
 
 ## ->Penjelasan Program:
